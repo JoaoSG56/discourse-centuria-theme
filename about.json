@@ -1,0 +1,20 @@
+{
+  "name": "Centuria",
+  "assets": {
+    "centuria-background": "assets/centuria-background.png"
+  },
+  "color_schemes": {
+    "Centuria Dark": {
+      "primary": "e2d1c2",
+      "secondary": "262322",
+      "tertiary": "8f82af",
+      "quaternary": "c14924",
+      "header_background": "d7c9aa",
+      "header_primary": "262322",
+      "highlight": "d7c9aa",
+      "danger": "db9584",
+      "success": "78be78",
+      "love": "f50057"
+    }
+  }
+}
