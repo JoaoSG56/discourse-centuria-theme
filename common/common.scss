@@ -1956,12 +1956,12 @@ $q-background: rgba(contrast($text-base), 0.5) !default;
 .cooked,
 .post-menu-area,
 .moderator .topic-body .contents .cooked {
-  background: $header_background;
+  background: $secondary;
 }
 
 .mobile-view.mobile-device {
   .topic-post .boxed .contents {
-    background: $header_background;
+    background: $secondary;
   }
 }
 
