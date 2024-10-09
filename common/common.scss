@@ -52,7 +52,7 @@ $i: !important;
 
 // Basics -------------------------------
 
-$v-font-weight: 300 !default;
+$v-font-weight: 600 !default;
 $v-font-size: 1.1em !default;
 $v-theme-background: null;
 @if ($theme_background == "") {
@@ -76,7 +76,7 @@ $theme-base: hsl(
   !default;
 $theme-trim: $quaternary !default;
 
-$main-background: rgba($secondary, 0.9) !default;
+$main-background: rgba($secondary) !default;
 $secondary-background: rgba($main-background, 0.5) !default;
 $tertiary-background: rgba($main-background, 0.8) !default;
 $text-base: reverse-lightness($secondary) !default;
@@ -87,7 +87,7 @@ $link-color: lighten($theme-base, 25%) !default;
 
 // settings -------------------------------
 
-$body-background-pattern-opacity: 0.25 !default;
+$body-background-pattern-opacity: 0.80 !default;
 $body-background-gradient-opacity: 0.45 !default;
 $body-gradient-color-first: adjust-hue($theme-base, -23deg);
 $body-gradient-color-second: adjust-hue($theme-base, 15);
@@ -651,7 +651,7 @@ ul.subcat-list,
 }
 
 .user-nav {
-  margin: 10px 0;
+  margin: 0;
 }
 
 .signup-cta .buttons,
@@ -833,7 +833,7 @@ section.embedded-posts.top {
 }
 
 #main-outlet {
-  padding-top: 80px;
+  padding-top: 30px;
 }
 
 #post_1 .post-actions .post-action {
@@ -2273,7 +2273,7 @@ $q-background: rgba(contrast($text-base), 0.5) !default;
   .moderator .topic-body,
   .topic-body.highlighted,
   #user-card {
-    border-radius: 10px;
+    border-radius: 0px;
   }
 
   aside.quote {
@@ -2290,7 +2290,7 @@ $q-background: rgba(contrast($text-base), 0.5) !default;
   .btn,
   button:hover,
   button.d-hover {
-    border-radius: 4px;
+    border-radius: 5px;
   }
 
   .topic-map .map-collapsed .buttons .btn {
