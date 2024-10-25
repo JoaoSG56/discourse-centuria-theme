@@ -178,7 +178,7 @@ var,
 address,
 dfn,
 strong {
-  font-size: 90%;
+  font-size: 100%;
   -webkit-text-stroke: none;
 }
 
@@ -1204,6 +1204,10 @@ a {
 }
 
 // Extras -------------------------------------------------------------------------------------
+
+b, strong {
+  font-weight: bold;
+}
 
 .groups-boxes .group-box .group-box-inner{
     background: #262322f5;
