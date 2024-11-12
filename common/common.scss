@@ -87,7 +87,7 @@ $link-color: lighten($theme-base, 25%) !default;
 
 // settings -------------------------------
 
-$body-background-pattern-opacity: 0.75 !default;
+$body-background-pattern-opacity: 0.65 !default;
 $body-background-gradient-opacity: 0.45 !default;
 $body-gradient-color-first: adjust-hue($theme-base, -23deg);
 $body-gradient-color-second: adjust-hue($theme-base, 15);
@@ -316,7 +316,6 @@ tr.topic-list-item-separator + .topic-list-item + .topic-list-item,
 .topic-list-bottom,
 .full-width > ul.nav.nav-pills,
 #banner,
-.latest-topic-list-item:nth-of-type(odd),
 .latest-topic-list,
 .top-topic-list,
 .offset2 .cooked,
@@ -1204,6 +1203,12 @@ a {
 }
 
 // Extras -------------------------------------------------------------------------------------
+
+.latest-topic-list-item:nth-of-type(odd){
+  background: $main-background;
+  color: darken(desaturate(reverse-lightness($main-background), 100%), 25%);
+}
+
 
 b, strong {
   font-weight: bold;
