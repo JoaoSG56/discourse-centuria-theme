@@ -53,7 +53,7 @@ $i: !important;
 // Basics -------------------------------
 
 $v-font-weight: 300 !default;
-$v-font-size: 1.1em !default;
+$v-font-size: 1.2em !default;
 $v-theme-background: null;
 @if ($theme_background == "") {
     $v-theme-background: url(#{$centuria_background}) !default;
@@ -87,7 +87,7 @@ $link-color: lighten($theme-base, 25%) !default;
 
 // settings -------------------------------
 
-$body-background-pattern-opacity: 0.25 !default;
+$body-background-pattern-opacity: 0.65 !default;
 $body-background-gradient-opacity: 0.45 !default;
 $body-gradient-color-first: adjust-hue($theme-base, -23deg);
 $body-gradient-color-second: adjust-hue($theme-base, 15);
@@ -178,7 +178,7 @@ var,
 address,
 dfn,
 strong {
-  font-size: 90%;
+  font-size: 100%;
   -webkit-text-stroke: none;
 }
 
@@ -274,7 +274,7 @@ nav.post-controls .highlight-action,
 .period-chooser .top-date-string,
 .small-action .small-action-desc,
 .small-action .topic-avatar i {
-  color: darken($text-base, 30%);
+  color: white;
 }
 
 // backgrounds --------------------------------------------------------------------------------
@@ -302,9 +302,9 @@ ul.general,
 .alert.alert-info,
 .body-page,
 .topic-list,
-.topic-list .topic-list-body .topic-list-item:nth-of-type(even),
+.topic-list .topic-list-body,
 .category-list,
-.category-list .topic-list-body .topic-list-item:nth-of-type(even),
+.category-list .topic-list-body,
 .search-container,
 .search-advanced-options,
 .user-stream-item.item,
@@ -316,7 +316,6 @@ tr.topic-list-item-separator + .topic-list-item + .topic-list-item,
 .topic-list-bottom,
 .full-width > ul.nav.nav-pills,
 #banner,
-.latest-topic-list-item:nth-of-type(odd),
 .latest-topic-list,
 .top-topic-list,
 .offset2 .cooked,
@@ -362,7 +361,6 @@ button.ok:hover {
 .d-header-icons a.icon,
 .avatar-wrapper,
 .user-navigation .nav-stacked a,
-.user-content,
 .main-content .nav-drop .nav-dropdown-menu a:hover,
 .list-controls .category-dropdown-menu a:hover,
 .list-controls .category-dropdown-menu a:hover,
@@ -431,7 +429,6 @@ img.avatar,
 #user-card .card-content,
 #user-card.show-badges .badge-section .user-badge,
 #user-card.show-badges .badge-section .more-user-badges,
-.badge-card .badge-contents,
 nav.post-controls .post-admin-menu,
 .badges .content-list ul li {
   border: 1px solid;
@@ -651,7 +648,7 @@ ul.subcat-list,
 }
 
 .user-nav {
-  margin: 10px 0;
+  margin: 0;
 }
 
 .signup-cta .buttons,
@@ -833,7 +830,7 @@ section.embedded-posts.top {
 }
 
 #main-outlet {
-  padding-top: 80px;
+  padding-top: 30px;
 }
 
 #post_1 .post-actions .post-action {
@@ -1206,6 +1203,78 @@ a {
 }
 
 // Extras -------------------------------------------------------------------------------------
+
+.latest-topic-list-item:nth-of-type(odd){
+  background: $main-background;
+  color: darken(desaturate(reverse-lightness($main-background), 100%), 25%);
+}
+
+
+b, strong {
+  font-weight: bold;
+}
+
+.groups-boxes .group-box .group-box-inner{
+    background: #262322f5;
+}
+.post-actions {
+    padding-top: 10px;
+    margin-top: -10px;
+    border-radius: 10px;
+}
+
+.user-main .about .controls {
+    max-width: 13.5em;
+    margin: 0 1em;
+}
+
+.user-content {
+    padding: 20px;
+    margin-top: 2em;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    background: rgba(var(--secondary-rgb), 0.8);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+
+.user-main .about .secondary dl {
+    margin: 0 1em;
+    padding: .25em 1em;
+}
+
+.user-main .about .details .primary {
+    width: 100%;
+    position: relative; 
+    display: flex;
+    align-items: center;
+}
+
+
+.badge-card .badge-contents {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5em 1.5em;
+}
+
+
+.new-user-wrapper .user-navigation .nav-pills {
+    width: unset !important;
+    margin: auto !important;
+}
+
+.selector {
+    font-weight:  !important;
+}
+
+.container.posts {
+    display: flex; 
+    flex-direction: column;
+    margin-bottom: 10px;
+    justify-content: center;
+}
 
 .pace .pace-progress {
   background: darken($theme-base, 15%);
@@ -1761,7 +1830,6 @@ section.post-actions:empty {
 }
 
 .d-header .menu-panel {
-  box-shadow: $n;
   background-color: $secondary;
   border-top: 1px solid #555;
 }
@@ -2273,7 +2341,7 @@ $q-background: rgba(contrast($text-base), 0.5) !default;
   .moderator .topic-body,
   .topic-body.highlighted,
   #user-card {
-    border-radius: 10px;
+    border-radius: 5px;
   }
 
   aside.quote {
@@ -2290,13 +2358,13 @@ $q-background: rgba(contrast($text-base), 0.5) !default;
   .btn,
   button:hover,
   button.d-hover {
-    border-radius: 4px;
+    border-radius: 5px;
   }
 
   .topic-map .map-collapsed .buttons .btn {
     border-radius: 0 0 10px 0;
   }
-
+  
   table,
   .column,
   .group-outlet,
