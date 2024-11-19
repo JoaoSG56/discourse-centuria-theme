@@ -1204,6 +1204,12 @@ a {
 
 // Extras -------------------------------------------------------------------------------------
 
+.topic-map__contents {
+  padding-block: .5em;
+  padding-right: 1em;
+  flex-grow: 1;
+}
+
 .user-menu.revamped .tabs-list .btn.active, .user-menu.revamped .tabs-list .d-modal.json-schema-editor-modal .je-ready .active.json-editor-btn-add, .d-modal.json-schema-editor-modal .je-ready .user-menu.revamped .tabs-list .active.json-editor-btn-add, .user-menu.revamped .tabs-list .d-modal.json-schema-editor-modal .je-ready button.active, .d-modal.json-schema-editor-modal .je-ready .user-menu.revamped .tabs-list button.active {
   background-color: #d7c9aa;
 }
@@ -1282,12 +1288,18 @@ b, strong {
 }
 
 .container.posts {
-    margin-bottom: 10px;
-    justify-content: center;
-    grid-template-columns: 80%;
+  display: grid;
+  margin-bottom: 10px;
+  justify-content: center;
+  grid-template-columns: 70%;
 
 }
 
+$topic-body-width: 60em;
+
+:root {
+  --topic-body-width: #{$topic-body-width};
+}
 .pace .pace-progress {
   background: darken($theme-base, 15%);
 }
@@ -1931,7 +1943,7 @@ html.desktop-view.not-mobile-device {
     flex: 1;
   }
   .topic-body {
-    max-width: 690px;
+    max-width: 100%;
   }
   .embedded-posts .topic-body {
     width: 100%;
@@ -2121,12 +2133,11 @@ $q-background: rgba(contrast($text-base), 0.5) !default;
 }
 
 .topic-post {
-  width: 100%;
-  max-width: 690px;
+  width: 60em;
+  max-width: 60em;
 }
 
 .post-actions {
-  background: $q-background;
   margin: 0;
   padding-bottom: 1em;
 }
@@ -2155,10 +2166,6 @@ $q-background: rgba(contrast($text-base), 0.5) !default;
 
 .topic-avatar {
   padding: 9px 11px;
-}
-
-.topic-post {
-  width: 100%;
 }
 
 .topic-meta-data .post-info {
