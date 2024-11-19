@@ -1232,6 +1232,7 @@ b, strong {
     padding-top: 10px;
     margin-top: -10px;
     border-radius: 10px;
+    background: rgba(0, 0, 0, 0);
 }
 
 .user-main .about .controls {
@@ -1283,6 +1284,8 @@ b, strong {
 .container.posts {
     margin-bottom: 10px;
     justify-content: center;
+    grid-template-columns: 80%;
+
 }
 
 .pace .pace-progress {
