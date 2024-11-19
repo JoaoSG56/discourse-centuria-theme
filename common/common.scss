@@ -1204,6 +1204,22 @@ a {
 
 // Extras -------------------------------------------------------------------------------------
 
+.sidebar-section-link-wrapper .sidebar-section-link.active {
+  background: #505050;
+  font-weight: bold;
+}
+
+:root {
+  --d-selected: #505050;
+  --d-hover: #505050;
+}
+
+.more-topics__container {
+  position: relative;
+  padding-bottom: max(env(safe-area-inset-bottom), 1em);
+  max-width: none;
+}
+
 .topic-map__contents {
   padding-block: .5em;
   padding-right: 1em;
@@ -1290,6 +1306,7 @@ b, strong {
 .container.posts {
   display: grid;
   margin-bottom: 10px;
+  justify-items: center;
   justify-content: center;
   grid-template-columns: 70%;
 
@@ -2071,6 +2088,7 @@ $q-background: rgba(contrast($text-base), 0.5) !default;
 .topic-map {
   margin: 0;
   background: $q-background;
+  width: 100%;
 }
 
 .post-stream {
