@@ -1204,6 +1204,7 @@ a {
 
 // Extras -------------------------------------------------------------------------------------
 
+<<<<<<< HEAD
 .d-header-icons .unread-notifications {
   background-color: #9f8ca5;
   font-weight: bold;
@@ -1220,6 +1221,13 @@ a {
   font-weight: bold;
 }
 
+=======
+.sidebar-section-link-wrapper .sidebar-section-link.active {
+  background: #505050;
+  font-weight: bold;
+}
+
+>>>>>>> 8b3bee59807165ae2219185e9e30313b7a7b2ce5
 :root {
   --d-selected: #505050;
   --d-hover: #505050;
@@ -1314,6 +1322,7 @@ b, strong {
     font-weight:  !important;
 }
 
+<<<<<<< HEAD
 @media (min-width: 700px){
   .container.posts {
     display: grid;
@@ -1322,6 +1331,15 @@ b, strong {
     justify-content: center;
     grid-template-columns: 70%;
   }
+=======
+.container.posts {
+  display: grid;
+  margin-bottom: 10px;
+  justify-items: center;
+  justify-content: center;
+  grid-template-columns: 70%;
+
+>>>>>>> 8b3bee59807165ae2219185e9e30313b7a7b2ce5
 }
 
 $topic-body-width: 60em;
@@ -2162,11 +2180,17 @@ $q-background: rgba(contrast($text-base), 0.5) !default;
   right: 6px;
 }
 
+<<<<<<< HEAD
 @media (min-width: 700px){
   .topic-post {
     width: 60em;
     max-width: 60em;
   }
+=======
+.topic-post {
+  width: 60em;
+  max-width: 60em;
+>>>>>>> 8b3bee59807165ae2219185e9e30313b7a7b2ce5
 }
 
 .post-actions {
