@@ -1204,6 +1204,17 @@ a {
 
 // Extras -------------------------------------------------------------------------------------
 
+.d-header-icons .unread-notifications {
+  background-color: #9f8ca5;
+  font-weight: bold;
+  border: 2px solid #9f8ca5;
+}
+
+.topic-post {
+  width: 100%;
+  max-width: 60em;
+}
+
 .sidebar-section-link-wrapper .sidebar-section-link.active {
   background: #505050;
   font-weight: bold;
@@ -1303,13 +1314,14 @@ b, strong {
     font-weight:  !important;
 }
 
-.container.posts {
-  display: grid;
-  margin-bottom: 10px;
-  justify-items: center;
-  justify-content: center;
-  grid-template-columns: 70%;
-
+@media (min-width: 700px){
+  .container.posts {
+    display: grid;
+    margin-bottom: 10px;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: 70%;
+  }
 }
 
 $topic-body-width: 60em;
@@ -2150,9 +2162,11 @@ $q-background: rgba(contrast($text-base), 0.5) !default;
   right: 6px;
 }
 
-.topic-post {
-  width: 60em;
-  max-width: 60em;
+@media (min-width: 700px){
+  .topic-post {
+    width: 60em;
+    max-width: 60em;
+  }
 }
 
 .post-actions {
