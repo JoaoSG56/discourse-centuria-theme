@@ -1203,7 +1203,6 @@ a {
 }
 
 // Extras -------------------------------------------------------------------------------------
-
 @media screen and (min-width: 925px) {
   .container.posts .topic-navigation {
       grid-area: timeline;
@@ -1341,6 +1340,7 @@ b, strong {
     grid-template-columns: 70%;
   }
 }
+
 
 $topic-body-width: 60em;
 
