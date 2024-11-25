@@ -1203,11 +1203,28 @@ a {
 }
 
 // Extras -------------------------------------------------------------------------------------
+@media screen and (min-width: 925px) {
+  .container.posts .topic-navigation {
+      grid-area: timeline;
+      align-self: start;
+      position: -webkit-sticky;
+      position: sticky;
+      top: calc(var(--header-offset, 60px) + 2em);
+      margin-left: 5em;
+      z-index: 100;
+  }
+}
 
 .d-header-icons .unread-notifications {
   background-color: #9f8ca5;
   font-weight: bold;
-  border: 2px solid #9f8ca5;
+  border: 2px rgba(0, 0, 0, 0);
+  position: absolute;
+  z-index: 1;
+  top: -2px;
+  min-width: .6em;
+  left: auto;
+  right: -1px;
 }
 
 .topic-post {
@@ -1322,6 +1339,8 @@ b, strong {
     justify-content: center;
     grid-template-columns: 70%;
   }
+}
+
 
 $topic-body-width: 60em;
 
@@ -1987,6 +2006,12 @@ html.desktop-view.not-mobile-device {
 // mobile only
 
 html.mobile-view.mobile-device {
+
+  .onscreen-post .row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
   .topic-avatar img.avatar {
     margin: 0;
   }
@@ -2082,6 +2107,8 @@ $q-background: rgba(contrast($text-base), 0.5) !default;
 .mobile-view.mobile-device {
   .topic-post .boxed .contents {
     background: $secondary;
+    width: 100%;
+    max-width: 60em;
   }
 }
 
