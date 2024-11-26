@@ -2007,6 +2007,11 @@ html.desktop-view.not-mobile-device {
 
 html.mobile-view.mobile-device {
 
+  #main-outlet-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .user-main .about .primary .primary-textual {
     word-break: break-word;
     max-width: 100%;
