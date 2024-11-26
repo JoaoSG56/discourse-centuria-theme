@@ -2007,11 +2007,40 @@ html.desktop-view.not-mobile-device {
 
 html.mobile-view.mobile-device {
 
-  .onscreen-post .row {
+  .user-main .about .primary .primary-textual {
+    word-break: break-word;
+    max-width: 100%;
+    align-content: center;
+  }
+
+  .user-main .about .details .user-profile-avatar {
+    position: relative;
+    align-content: flex-start;
+  }
+
+  .user-main .about .details .primary {
+    position: relative;
     display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .user-main .about.collapsed-info .details {
+    height: 70px;
+  }
+
+  html {
+    overflow-x: hidden;
+  }
+
+  .post-avatar, .topic-avatar {
+    position: absolute;
+  }
+
+  .onscreen-post, .row {
     justify-content: center;
     width: 100%;
   }
+
   .topic-avatar img.avatar {
     margin: 0;
   }
