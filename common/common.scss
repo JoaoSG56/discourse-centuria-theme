@@ -2081,6 +2081,11 @@ html.mobile-view.mobile-device {
     position: absolute;
   }
 
+  .onscreen-post, .row {
+    justify-content: center;
+    width: 100%;
+  }
+
   .onscreen-post .row {
     display: flex;
     width: 100%;
