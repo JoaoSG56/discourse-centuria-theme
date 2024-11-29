@@ -1203,6 +1203,11 @@ a {
 }
 
 // Extras -------------------------------------------------------------------------------------
+
+html {
+  overflow-x: hidden;
+}
+
 @media screen and (min-width: 925px) {
   .container.posts .topic-navigation {
       grid-area: timeline;
@@ -2007,6 +2012,45 @@ html.desktop-view.not-mobile-device {
 
 html.mobile-view.mobile-device {
 
+  .category-list-item {
+    background: rgb(38 35 34 / 98%);
+    border-radius: 5px;
+  }
+
+  .category-list{
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .list-controls .nav-pills .drop {
+    border-bottom-right-radius: 10px;
+  }
+  .new-user-wrapper .user-navigation-secondary {
+    position: relative;
+    display: flex;
+    min-width: 0;
+    gap: 0 .5em;
+    font-size: var(--font-down-1);
+    background: rgb(37 36 34 / 90%);
+    border-radius: 5px;
+    margin-top: 2px;
+  }
+
+  .btn.btn-primary {
+    color: #262221;
+    background-color: rgb(224 224 224 / 68%);
+  }
+
+  .more-topics__container .more-topics__list .topic-list-body .topic-list-item:first-child td {
+    padding-top: 10px;
+  }
+
+  .topic-map__contents {
+    padding-block: .5em;
+    padding-right: 1em;
+    flex-grow: 1;
+    padding-left: 1em;
+  }
+
   #main-outlet-wrapper {
     margin-left: auto;
     margin-right: auto;
@@ -2033,11 +2077,7 @@ html.mobile-view.mobile-device {
     height: 70px;
   }
 
-  html {
-    overflow-x: hidden;
-  }
-
-  .post-avatar, .topic-avatar {
+  .post-avatar .topic-avatar {
     position: absolute;
   }
 
@@ -2048,8 +2088,9 @@ html.mobile-view.mobile-device {
 
   .onscreen-post .row {
     display: flex;
-    justify-content: center;
     width: 100%;
+    justify-content: unset;
+    flex-direction: column;
   }
   
   .topic-avatar img.avatar {
