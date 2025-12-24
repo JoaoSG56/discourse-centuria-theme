@@ -2095,6 +2095,8 @@ html.mobile-view.mobile-device {
   
   .topic-avatar img.avatar {
     margin: 0;
+    position: absolute;
+    top: 15px;
   }
 
   .alert {
@@ -2505,6 +2507,10 @@ $q-background: rgba(contrast($text-base), 0.5) !default;
   aside.quote {
     .title {
       border-radius: 10px 10px 0 0;
+
+      .avatar {
+        margin: 0;
+      }
     }
 
     blockquote {
