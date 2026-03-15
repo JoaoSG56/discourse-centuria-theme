@@ -1282,6 +1282,7 @@ b, strong {
 
 .groups-boxes .group-box .group-box-inner{
     background: #262322f5;
+    overflow: hidden;
 }
 .post-actions {
     padding-top: 10px;
@@ -1330,6 +1331,8 @@ b, strong {
 .new-user-wrapper .user-navigation .nav-pills {
     width: unset !important;
     margin: auto !important;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
 }
 
 .selector {
@@ -1916,6 +1919,10 @@ section.post-actions:empty {
 
 ul.nav.nav-pills {
   margin: 0.5em 0;
+}
+
+.full-width > ul.nav.nav-pills {
+  background-color: $secondary; 
 }
 
 .admin-controls {
